@@ -1,22 +1,15 @@
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
+        // Create a Circle object
+        Circle circle = new Circle(8.0, "violet", true);
+        System.out.println("Circle: " + circle.toString());
+        System.out.println("Area: " + circle.getArea());
+        System.out.println("Perimeter: " + circle.getPerimeter());
 
-        Dog puppy = new Dog();
-
-        puppy.setName("Aiah");
-
-        System.out.println(puppy.showName());
-
-        puppy.bark();
-
-        puppy.listofpuppies = new String[] {"Maloi", "Colet", "Gwen", "Mikha", "Staku", "Jho", "Sheena"};
-
-        int shownumber = puppy.show_numofpuppies();
-
-        System.out.println("Number of puppies: " + shownumber);
-
-        puppy.show_numofpuppies();
-
-        puppy.showpuppies();
+        // Create a Rectangle object
+        Rectangle rectangle = new Rectangle(5.0, 6.0, "pink", false);
+        System.out.println("\nRectangle: " + rectangle.toString());
+        System.out.println("Area: " + rectangle.getArea());
+        System.out.println("Perimeter: " + rectangle.getPerimeter());
     }
-}
+  }

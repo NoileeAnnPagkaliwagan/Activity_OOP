@@ -1,15 +1,14 @@
 public class Main {
-    public static void main(String[] args) {
-        // Create a Circle object
-        Circle circle = new Circle(8.0, "violet", true);
-        System.out.println("Circle: " + circle.toString());
-        System.out.println("Area: " + circle.getArea());
-        System.out.println("Perimeter: " + circle.getPerimeter());
 
-        // Create a Rectangle object
-        Rectangle rectangle = new Rectangle(5.0, 6.0, "pink", false);
-        System.out.println("\nRectangle: " + rectangle.toString());
-        System.out.println("Area: " + rectangle.getArea());
-        System.out.println("Perimeter: " + rectangle.getPerimeter());
+    public static void main(String[] args)
+    {
+        Student student = new Student("Noilee Ann Pagkaliwagan", "Navotas,Balayan, Batangas", "BSIT", 2);
+        
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Student Address: " + student.getAddress());
+        System.out.println("Student Program: " + student.getProgram());
+        System.out.println("Student Year: " + student.getYear());
+        System.out.println(student.toString());
     }
-  }
+
+}
